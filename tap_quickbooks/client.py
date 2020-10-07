@@ -45,7 +45,7 @@ class QuickbooksClient():
         self.username           = config['username']
         self.password           = config['password']
         self.PROD_ENDPOINT_BASE = config.get('endpoint') or PROD_ENDPOINT_BASE
-        # self.user_agent         = config['user_agent']
+        self.user_agent         = config['user_agent']
         self.realm_id           = config['realm_id']
         self.config_path        = config_path
         # self.session = OAuth2Session(config['client_id'],
